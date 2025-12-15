@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wash&Clean – Limpeza Automóvel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header with hero and call‑to‑action -->
+  <header class="hero">
+    <div class="container">
+      <img src="assets/logo.png" alt="Logo Wash&Clean" class="logo" />
+      <h1>Wash&Clean</h1>
+      <p>Serviço profissional de limpeza automóvel no seu horário.</p>
+      <a href="#booking" class="btn">Marque já</a>
+    </div>
+  </header>
+
+  <!-- Serviços -->
+  <section id="servicos" class="services">
+    <div class="container">
+      <h2>Serviços</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Lavagem Exterior</h3>
+          <p>Limpeza completa da carroçaria com produtos de alta qualidade.</p>
+        </div>
+        <div class="card">
+          <h3>Lavagem Interior</h3>
+          <p>Aspiração e higienização do habitáculo, tapetes e estofos.</p>
+        </div>
+        <div class="card">
+          <h3>Detalhamento</h3>
+          <p>Serviço de limpeza e proteção detalhada para o seu veículo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section id="beneficios" class="benefits">
+    <div class="container">
+      <h2>Porquê escolher a Wash&Clean?</h2>
+      <ul>
+        <li>Utilizamos apenas produtos ecológicos e de qualidade.</li>
+        <li>Horários flexíveis adaptados ao seu dia.</li>
+        <li>Profissionais experientes e dedicados.</li>
+        <li>Garantia de satisfação em todas as marcações.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Marcação / Booking -->
+  <section id="booking" class="booking">
+    <div class="container">
+      <h2>Marcar Serviço</h2>
+      <form id="bookingForm">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="service">Serviço</label>
+          <select id="service" name="service" required>
+            <option value="Lavagem Exterior">Lavagem Exterior</option>
+            <option value="Lavagem Interior">Lavagem Interior</option>
+            <option value="Detalhamento">Detalhamento</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Data</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+        <div class="form-group">
+          <label for="time">Hora</label>
+          <input type="time" id="time" name="time" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn">Confirmar Marcação</button>
+      </form>
+      <div id="bookingResult" class="result"></div>
+    </div>
+  </section>
+
+  <!-- Contactos -->
+  <section id="contactos" class="contact">
+    <div class="container">
+      <h2>Contactos</h2>
+      <p>
+        Email: <a href="mailto:washandclean20@gmail.com">washandclean20@gmail.com</a><br />
+        Telefone: <span class="phone">[insira o número de telefone]</span>
+      </p>
+      <p>Horário de funcionamento:<br />
+        Segunda a Sexta: 17h30 - 21h30<br />
+        Sábado e Domingo: 10h00 - 19h00
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Wash&Clean. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
